@@ -9,6 +9,6 @@ using std::cout;
 class Octal : public Numero{
     public:
         Octal(string s): Numero(s){};
-        string toString(){cout << "Octal: " + num;};
+        string toString(){return "Octal: " + num;};
 };
 #endif

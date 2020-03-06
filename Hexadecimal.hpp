@@ -9,6 +9,6 @@ using std::cout;
 class Hexadecimal : public Numero{
     public:
         Hexadecimal(string s) : Numero(s){};
-        string toString(){cout << "Hexadecimal: " + num;};
+        string toString(){return "Hexadecimal: " + num;};
 };
 #endif

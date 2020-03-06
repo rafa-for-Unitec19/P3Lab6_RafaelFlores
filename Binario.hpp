@@ -9,6 +9,6 @@ using std::cout;
 class Binario : public Numero{
     public:
         Binario(string s): Numero(s){};
-        string toString(){cout << "Binario: " + num;};
+        string toString(){return "Binario: " + num;};
 };
 #endif

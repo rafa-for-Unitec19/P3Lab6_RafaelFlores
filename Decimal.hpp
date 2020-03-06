@@ -9,6 +9,6 @@ using std::cout;
 class Decimal : public Numero{
     public:
         Decimal(string s): Numero(s){};
-        string toString(){cout << "Decimal: " + num;};
+        string toString(){return "Decimal: " + num;};
 };
 #endif
