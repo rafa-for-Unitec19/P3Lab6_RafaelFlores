@@ -7,8 +7,15 @@ using std::string;
 using std::cout;
 
 class Octal : public Numero{
+    private:
+        void toDec(){Numero::dec = stoi(Numero::num, 0, 8);
+            cout << dec;
+        };
     public:
-        Octal(string s): Numero(s){};
+        Octal(string s): Numero(s){
+            toDec();
+        };
         string toString(){return "Octal: " + num;};
+        int getDec() const {return Numero::dec;};
 };
 #endif
